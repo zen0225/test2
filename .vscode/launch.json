@@ -20,6 +20,36 @@
             ],
             "jinja": true,
             "justMyCode": true
+        },
+        {
+            "name": "Docker: Python Flask",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug flask",
+            "python": {
+                "pathMappings": [
+                    {
+                        "localRoot": "${workspaceFolder}",
+                        "remoteRoot": "/app"
+                    }
+                ],
+                "projectType": "flask"
+            }
+        },
+        {
+            "name": "Docker: Python Long Script",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug long-script",
+            "python": {
+                "pathMappings": [
+                    {
+                        "localRoot": "${workspaceFolder}",
+                        "remoteRoot": "/app"
+                    }
+                ],
+                "projectType": "flask"
+            }
         }
     ]
 }

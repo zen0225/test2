@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  pythonsamplevscodeflasktutorial:
+    image: pythonsamplevscodeflasktutorial
+    build:
+      context: .
+      dockerfile: ./compose/flask_apps/Dockerfile
+    ports:
+      - 5002:5002
+
+  long-script:
+    image: long-script
+    build:
+      context: .
+      dockerfile: ./compose/long_script/Dockerfile
