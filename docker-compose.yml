@@ -5,6 +5,6 @@ services:
     image: pythonsamplevscodeflasktutorial
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: ./compose/flask_apps/Dockerfile
     ports:
       - 5002:5002

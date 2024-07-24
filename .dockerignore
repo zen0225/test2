@@ -16,7 +16,8 @@
 **/bin
 **/charts
 **/docker-compose*
-**/compose*
+# TODO: should I put the images in another directory??
+!**/compose*
 **/Dockerfile*
 **/node_modules
 **/npm-debug.log
