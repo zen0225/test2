@@ -12,3 +12,10 @@ services:
       - 5678:5678
     environment:
       - FLASK_APP=hello_app/webapp.py
+
+  long-script:
+    image: long-script
+    build:
+      context: .
+      dockerfile: ./compose/long_script/Dockerfile
+    command: ["sh", "-c", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 long_script.py"]
