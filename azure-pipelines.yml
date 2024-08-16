@@ -25,6 +25,8 @@ steps:
   inputs:
     versionSpec: '$(python.version)'
   displayName: 'Use Python $(python.version)'
+    
+  
 
 - script: |
     python -m pip install --upgrade pip
