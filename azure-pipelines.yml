@@ -18,7 +18,7 @@ strategy:
 
 steps:
 - script: |
-    dir d:\learningsupport\
+    dir d:\learningsupport\frontend\
   displayName: 'Show me hostname'
 - task: UsePythonVersion@0
   inputs:
