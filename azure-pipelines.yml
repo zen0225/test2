@@ -28,6 +28,7 @@ steps:
       # Write your PowerShell commands here.
       
       Write-Host "Hello World"
+      Write-Host ${env:MYNAME}
   displayName: 'Powershell run'
 - task: UsePythonVersion@0
   inputs:
