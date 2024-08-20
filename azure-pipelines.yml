@@ -18,7 +18,7 @@ strategy:
 
 steps:
 - script: |
-    cd d:\learningsupport && dir
+    write-output ${env:MYNAME}
   displayName: 'Show me hostname'
 - task: UsePythonVersion@0
   inputs:
