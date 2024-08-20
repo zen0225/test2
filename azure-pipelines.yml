@@ -18,7 +18,7 @@ strategy:
 
 steps:
 - script: |
-    echo %MYNAME%
+    echo MYNAME: %MYNAME%
   displayName: 'Show me hostname'
 - task: UsePythonVersion@0
   inputs:
