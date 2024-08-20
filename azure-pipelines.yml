@@ -18,7 +18,7 @@ strategy:
 
 steps:
 - script: |
-    write-output ${env:MYNAME}
+    echo %MYNAME%
   displayName: 'Show me hostname'
 - task: UsePythonVersion@0
   inputs:
