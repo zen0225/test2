@@ -8,13 +8,18 @@ trigger:
 pr:
 - pr
 
-pool: 
-  name: Default
-  vmImage: windows-latest
 strategy:
   matrix:
-    Python37:
-      python.version: '3.7'
+    linux:
+      imageName: "ubuntu-latest"
+    mac:
+      imageName: "macOS-latest"
+    windows:
+      imageName: "windows-latest"
+  maxParallel: 3
+
+pool:
+  vmImage: $(imageName)
 
 steps:
 
