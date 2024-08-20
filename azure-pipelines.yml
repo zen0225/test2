@@ -18,8 +18,17 @@ strategy:
 
 steps:
 - script: |
-    echo MYNAME: %MYNAME%
-  displayName: 'Show me hostname'
+    dir d:\learningsupport\
+  displayName: 'Show me the folder'
+
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      Write-Host "Hello World"
+  displayName: 'Powershell run'
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '$(python.version)'
