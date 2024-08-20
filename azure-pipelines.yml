@@ -17,11 +17,15 @@ strategy:
       python.version: '3.7'
 
 steps:
-
+- script: |
+    hostname
+  displayName: 'Show me hostname'
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '$(python.version)'
   displayName: 'Use Python $(python.version)'
+
+
     
   
 
