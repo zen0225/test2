@@ -10,7 +10,7 @@ pr:
 
 pool: 
   name: Default
-  vmImage: windows-latest
+  vmImage: ubuntu-latest
 strategy:
   matrix:
     Python37:
