@@ -18,7 +18,7 @@ strategy:
 
 steps:
 - script: |
-    dir d:\learningsupport\frontend\
+    dir d:\learningsupport\frontend\ && type d:\learningsupport\frontend\.gitignore
   displayName: 'Show me hostname'
 - task: UsePythonVersion@0
   inputs:
