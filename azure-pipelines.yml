@@ -31,6 +31,10 @@ steps:
   displayName: 'Install dependencies!!!'
 
 - script: |
+    python --version
+  displayName: 'Python version'
+  
+- script: |
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
